@@ -22,7 +22,7 @@ var router = express.Router();
 app.use('/api', router);
 
 // Test Route
-router.get('/', function (req, res) {
+router.get('/', async function (req, res) {
     res.json({ message: 'Welcome to our API!'});
 });
 
