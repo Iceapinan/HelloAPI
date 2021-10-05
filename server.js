@@ -26,6 +26,11 @@ router.get('/', function (req, res) {
     res.json({ message: 'Welcome to our API!'});
 });
 
+// get hello
+router.get('/gethello', function (req, res) {
+    res.json({ message: 'Hello World!'});
+});
+
 // Fire up server
 app.listen(port);
 
